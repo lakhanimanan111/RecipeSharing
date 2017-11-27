@@ -7,8 +7,8 @@
 <title>Login Page</title>
 </head>
 <body>
-
-<form action="LoginController">
+<a href="signUp.jsp">Sign Up</a>
+<form action="/RecipeSharing/LoginController">
   
     <label><b>User name</b></label>
     <input type="text" name="uname" required>

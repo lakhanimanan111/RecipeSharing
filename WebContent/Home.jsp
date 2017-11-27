@@ -4,50 +4,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Home</title>
 </head>
 <body>
+<%
+		String user = (String) session.getAttribute("currentUser");
+%>
+Welcome <%= user %>
 
-<a href = "\RecipeSharing\Login.jsp">Login</a>
-<a href = "\RecipeSharing\SignUp.jsp">Sign Up</a> <br/>
 
-<form>
-	<b>Category:</b>
-	<span>
-	<select name="mood">
-		<option value="0" selected disabled>Category1</option>
-		<option value="happy">:)</option>
-		<option value="neutral">:|</option>
-		<option value="sad">:(</option>
-	</select>	
-	<select name="mood">
-		<option value="0" selected disabled>Category2</option>
-		<option value="happy">:)</option>
-		<option value="neutral">:|</option>
-		<option value="sad">:(</option>
-	</select>	
-	<select name="mood">
-		<option value="0" selected disabled>Category3</option>
-		<option value="happy">:)</option>
-		<option value="neutral">:|</option>
-		<option value="sad">:(</option>
-	</select>	
-	<select name="mood">
-		<option value="0" selected disabled>Category4</option>
-		<option value="happy">:)</option>
-		<option value="neutral">:|</option>
-		<option value="sad">:(</option>
-	</select>
-	<button type="submit">Go</button>
-	</span>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
-	<span>
-  <label for="search">     <b>Search</b></label>
-  <input type="search" name="search">
-  <input type="submit">
-</span>
-</form>
-
+<a href = "login.jsp">Log Out</a> <br>
+<a href = "uploadRecipe.jsp">Upload Recipe</a>
+<a href = "intermediate.jsp">View Recipe</a>
+<a href="search.jsp">Search Recipe</a>
+	
 <div>
 	<h2>Popular Recipes</h2>
 <table border=1>

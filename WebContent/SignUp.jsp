@@ -10,7 +10,7 @@
 
 <h1>Sign Up</h1>
 	
-<form action="SignUpController" method="post">
+<form action="/RecipeSharing/SignUpController" method="post">
 
 	<label><b>Name</b></label>
 	<input type="text" name="name" required><br><br>
@@ -24,7 +24,7 @@
     <label><b>Password</b></label>
     <input type="password" name="psw" required><br><br>
     
-    <input type="submit" value="Submit"/>
+    <input type="submit" value="Sign Up"/>
     
  </form>
 </body>
